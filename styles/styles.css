@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --themecolor: #04334c;
+  --hovercolor: black;
+  --bgcolor: #e8f3f4;
+  --headerColor: #b1d56d;
+  --fontColor: #cccccc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  color: #555;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#667d8d), to(#04344c));
+  background-image: linear-gradient(to bottom right, #667d8d, #04344c);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.resume {
+  width: 8.5in;
+  height: 12in;
+  border-radius: 2px;
+  background: var(--themecolor);
+  background-image: url("../assets/svgElements/mainBG.svg");
+  -webkit-box-shadow: 13px 13px 20px #a9d9e66b, -13px -13px 20px #232324;
+          box-shadow: 13px 13px 20px #a9d9e66b, -13px -13px 20px #232324;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#leftSide {
+  width: 51%;
+  display: inline-block;
+}
+
+#rightSide {
+  width: 48%;
+  display: inline-block;
+}
+
+/* ----------Common CSS Left side-------------- */
+.sectionTitle {
+  color: var(--themecolor);
+  background-color: var(--bgcolor);
+  width: 370px;
+  margin-top: 30px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  margin-bottom: 15px;
+}
+
+.sectionTitle p {
+  font-size: 28px;
+  font-weight: 700;
+  margin-left: 30px;
+}
+
+.sectionDesc {
+  color: var(--bgcolor);
+  font-size: 11px;
+  font-weight: 200;
+}
+
+.sectionDesc p {
+  margin-left: 30px;
+  margin-right: 50px;
+  line-height: 1.25;
+}
+
+.sectionHeader, .sectionTime {
+  color: var(--bgcolor);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.sectionHeader p, .sectionTime p {
+  margin-left: 30px;
+}
+
+.sectionHeader {
+  margin-bottom: 5px;
+}
+
+.sectionTime {
+  margin-top: 5px;
+}
+
+.itemGap {
+  margin-top: 15px;
+}
+
+/* ---------Common Css Right side---------- */
+.rightTitle {
+  color: var(--themecolor);
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+.rightTitle p {
+  font-size: 28px;
+  font-weight: 700;
+  margin-left: 30px;
+}
+
+.rightSectionGapReducer {
+  margin-top: -40px;
+}
+
+/* -------------------self Title section ---------------- */
+.selfTitle {
+  color: var(--bgcolor);
+  margin-top: 60px;
+  margin-left: 70px;
+}
+
+.selfTitle .selfName {
+  font-size: 52px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.selfTitle .selfDesignation {
+  letter-spacing: 1px;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.selfTitle .selfGraphics {
+  font-size: 48px;
+}
+
+/* --------------Social Media Section-------- */
+.socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  color: var(--bgcolor);
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.socialMedia a {
+  margin-left: 5px;
+  color: var(--bgcolor);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.socialMedia a:hover {
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+/* -------------Image Section---------- */
+.imageContainer {
+  width: 220px;
+  height: 220px;
+  background-color: #bad3d7;
+  border-radius: 25px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-top: 125px;
+  margin-left: 55px;
+  overflow: hidden;
+}
+
+.imageContainer img {
+  display: none;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin-top: -40px;
+  margin-left: -40px;
+  width: 300px;
+  height: 300px;
+}
+
+/* ---------------Contact Section------------- */
+.contact .icon {
+  color: var(--themecolor);
+  margin-left: 30px;
+}
+
+.contact i {
+  margin-bottom: 20px;
+}
+
+.contact a {
+  color: var(--themecolor);
+  text-decoration: none;
+  font-size: 14px;
+  margin-left: 20px;
+  font-weight: 400;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+  font-size: 15px;
+}
+
+/* ----------skills sectionn---------- */
+.skills .skillItem {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 12px solid var(--themecolor);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.skills .skillItem p {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.skills .skillItem:hover {
+  border: 12px solid #bad3d7;
+}
+
+.skills .skillItem1 {
+  background: conic-gradient(from 0deg at 50%, #bad3d7 90%, var(--bgcolor) 10%);
+}
+
+.skills .skillItem2 {
+  background: conic-gradient(from 0deg at 50%, #bad3d7 70%, var(--bgcolor) 10%);
+}
+
+.skills .skillItem3 {
+  background: conic-gradient(from 0deg at 50%, #bad3d7 40%, var(--bgcolor) 10%);
+}
+
+.skills .skillItem4 {
+  background: conic-gradient(from 0deg at 50%, #bad3d7 60%, var(--bgcolor) 10%);
+}
+
+.skills .skillItem5 {
+  background: conic-gradient(from 0deg at 50%, #bad3d7 80%, var(--bgcolor) 10%);
+}
+
+.skills .skillItem6 {
+  background: conic-gradient(from 0deg at 50%, #bad3d7 50%, var(--bgcolor) 10%);
+}
+
+/* ---------------Languages section---------------- */
+.lang .langItem {
+  margin-left: 30px;
+  color: var(--themecolor);
+}
+
+.lang .langItem p {
+  font-weight: 500;
+}
+
+.lang .langItem .langBar {
+  margin-top: 5px;
+  height: 5px;
+  width: 300px;
+  background-color: var(--themecolor);
+  margin-bottom: 15px;
+}
+
+.lang .langItem .langBarEmpty {
+  margin-top: -20px;
+  height: 5px;
+  background-color: #bad3d7;
+  margin-bottom: 15px;
+}
+
+.lang .langEng .langBarEmpty {
+  width: 50px;
+  margin-left: 250px;
+}
+
+.lang .langHind .langBarEmpty {
+  width: 70px;
+  margin-left: 230px;
+}
+
+/* ------------------------------------------------------------------------------- */
+@media print {
+  html {
+    height: 11in;
+    width: 8.5in;
+    overflow: hidden;
+  }
+  body {
+    margin: 0;
+  }
+  .resume {
+    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
