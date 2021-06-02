@@ -1,21 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
 :root {
-  --themecolor: #04334c;
   --hovercolor: black;
-  --bgcolor: #e8f3f4;
-  --headerColor: #b1d56d;
-  --fontColor: #cccccc;
+  --leftBgcolor: #343a46;
+  --headerColor: #20242e;
+  --fontColor: #3d3d3d;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 body {
   color: #555;
-  background-image: linear-gradient(to bottom right, #667d8d, #04344c);
+  background-image: linear-gradient(to bottom right, #20242e, #737f97);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -25,38 +25,152 @@ body {
   width: 8.5in;
   height: 12in;
   border-radius: 2px;
-  background:  var(--themecolor);
-  box-shadow: 13px 13px 20px #a9d9e66b,
-              -13px -13px 20px #232324;
+  background: whitesmoke;
+  box-shadow: 13px 13px 20px #20242e,
+              -13px -13px 20px #60708f00;
   margin: 0px auto;
   display: flex;
   flex-direction: row;
 }
 
 #leftSide{
-  width: 51%;
+  width: 33%;
+  height: 12in;
+  background: var(--leftBgcolor);
   display:inline-block;
+  color: whitesmoke;
+  padding-left: 25px;
+  padding-top: 25px;
 }
 
 
 #rightSide{
-  width: 48%;
+  width: 66%;
   display:inline-block;
+  height: 12in;
+  background: whitesmoke;
+  color: var(--fontColor);
 }
 
 /* ----------Common CSS Left side-------------- */
+.sectionHeader{
+  background: var(--headerColor);
+  margin-top: 20px;
+  margin-left: -25px;
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 25px;
+  font-weight: 700;
+}
 
+
+.info, .skillItem{
+  margin-top: 15px;
+  .infoHeader{
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .infoDetails{
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  a{
+    color: whitesmoke ;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+  a:hover{
+    text-decoration: underline;
+    font-size: 15px;
+  }
+}
 
 /* ---------Common Css Right side---------- */
 
-/* -------------------self Title section ---------------- */
-
+/* -------------------leftHeader section ---------------- */
+.leftHeader{
+  .name{
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .desig{
+    font-size: 24px;
+    font-weight: 400;
+  }
+}
 
 
 
 /* ----------skills sectionn---------- */
 
+.skillItem{
+  .infoHeader{
+    font-weight: 400;
+    font-size: 15px;
+  }
+}
+.skillGraph{
+  height: 10px;
+  background: whitesmoke;
+  margin-right: 25px;
+  margin-top: 5px;
+}
+
+.softSkills{
+  .item2{
+    .skillGraph{
+      margin-right: 50px;
+    }
+  }
+  
+  .item3{
+    .skillGraph{
+      margin-right: 100px;
+    }
+  }
+}
+
+
+.techSkills{
+  .item1{
+    .skillGraph{
+      margin-right: 75px;
+    }
+  }
+  .item2{
+    .skillGraph{
+      margin-right: 25px;
+    }
+  }
+  .item3{
+    .skillGraph{
+      margin-right: 50px;
+    }
+  }
+}
+
 /* ---------------Languages section---------------- */
+
+
+.language{
+  .item1{
+    .skillGraph{
+      margin-right: 25px;
+    }
+  }
+  .item2{
+    .skillGraph{
+      margin-right: 50px;
+    }
+  }
+
+}
 
 /* ------------------------------------------------------------------------------- */
 
