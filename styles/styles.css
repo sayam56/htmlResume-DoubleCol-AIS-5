@@ -224,6 +224,11 @@ body {
   margin-right: 50px;
 }
 
+/* -----------------------Certification-------------------- */
+.certifications .rightItem .rightItemDesc .post {
+  font-size: 14px;
+}
+
 /* ------------------------------------------------------------------------------- */
 @media print {
   html {
